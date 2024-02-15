@@ -5,13 +5,9 @@ Progettare la struttura del global state sulla linea degli esercizi svolti nei g
 ### Milestone 1:
 
 Creare un layout base con una searchbar (una input e un button) in cui possiamo scrivere completamente o parzialmente il nome di un film. Possiamo, cliccando il bottone, cercare sull’API tutti i film che contengono ciò che ha scritto l’utente. Vogliamo dopo la risposta dell’API visualizzare a schermo i seguenti valori per ogni film trovato:
-
 1. Titolo
-
 2. Titolo Originale
-
 3. Lingua
-
 4. Voto
 
 ### Milestone 2:
@@ -37,3 +33,14 @@ Trasformiamo quello che abbiamo fatto fino ad ora in una vera e propria webapp, 
 - Un header che contiene logo e search bar
 - Dopo aver ricercato qualcosa nella searchbar, i risultati appaiono sotto forma di “card” in cui lo sfondo è rappresentato dall’immagine di copertina (consiglio la poster_path con w342)
 - Andando con il mouse sopra una card (on hover), appaiono le informazioni aggiuntive già prese nei punti precedenti più la overview
+
+
+
+### Milestone 5 (Opzionale):
+
+Partendo da un film o da una serie, richiedere all'API quali sono gli attori che fanno parte del cast aggiungendo alla nostra scheda Film / Serie SOLO i primi 5 restituiti dall’API con Nome e Cognome, e i generi associati al film con questo schema: “Genere 1, Genere 2, …”.
+
+
+### Milestone 6 (Opzionale):
+
+Creare una lista di generi richiedendo quelli disponibili all'API e creare dei filtri con i generi tv e movie per mostrare/nascondere le schede ottenute con la ricerca.
