@@ -16,7 +16,7 @@ Trasformiamo la stringa statica della lingua in una vera e propria bandiera dell
 
 Allarghiamo poi la ricerca anche alle serie tv. Con la stessa azione di ricerca dovremo prendere sia i film che corrispondono alla query, sia le serie tv, stando attenti ad avere alla fine dei valori simili (le serie e i film hanno campi nel JSON di risposta diversi, simili ma non sempre identici) Qui un esempio di chiamata per le serie tv:
 
-https://api.themoviedb.org/3/search/tv?api_key=e99307154c6dfb0b4750f6603256716d&language=it_IT&query=s crubs
+https://api.themoviedb.org/3/search/tv?api_key=e99307154c6dfb0b4750f6603256716d&language=it_IT&query=scrubs
 
 ### Milestone 3:
 
@@ -35,11 +35,9 @@ Trasformiamo quello che abbiamo fatto fino ad ora in una vera e propria webapp, 
 - Andando con il mouse sopra una card (on hover), appaiono le informazioni aggiuntive già prese nei punti precedenti più la overview
 
 
-
 ### Milestone 5 (Opzionale):
 
 Partendo da un film o da una serie, richiedere all'API quali sono gli attori che fanno parte del cast aggiungendo alla nostra scheda Film / Serie SOLO i primi 5 restituiti dall’API con Nome e Cognome, e i generi associati al film con questo schema: “Genere 1, Genere 2, …”.
-
 
 ### Milestone 6 (Opzionale):
 
