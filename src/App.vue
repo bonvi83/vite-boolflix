@@ -101,11 +101,9 @@
       <li>Voto: {{ TVserie.vote }}</li> 
     </ul>
   </div>
-
 </template>
 
 <style>
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -114,5 +112,4 @@ body {
   margin: 0 auto;
   margin-bottom: 3rem;
 }
-
 </style>
