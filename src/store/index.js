@@ -10,4 +10,5 @@ export const store = reactive({
 
   movies: [],
   TVseries: []
+  
 })
