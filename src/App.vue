@@ -9,7 +9,6 @@
     data() {
       return {
         store,
-        // searchedTerm: 'scrubs'
       }
     },
 
@@ -25,9 +24,9 @@
             }
           }
         ).then((response) => {
-          //uso map() per ottimizzare il mio array dei risultati
           store.movies = response.data.results.map( (movie) => {
             return {
+              id: movie.id,
               title: movie.title,
               original_title: movie.original_title,
               language: movie.original_language,
@@ -49,6 +48,7 @@
         ).then((response) => {
           store.TVseries = response.data.results.map( (TVserie) => {
             return {
+              id: TVserie.id,
               name: TVserie.name,
               original_title: TVserie.original_name,
               language: TVserie.original_language,
@@ -73,25 +73,12 @@
 </script>
 
 <template>
-  <div class="container">
-    <h1> {{ this.store.title }} </h1>
-    <app-header @searchEvent="startResearch" />
-    <app-main />
-  </div>
-
-
+  <app-header @searchEvent="startResearch" />
+  <app-main />
 
 </template>
 
-<style>
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
-
+<style lang="scss">
+  @use './styles/general.scss';
+  @use './styles/partials/_variables.scss';
 </style>

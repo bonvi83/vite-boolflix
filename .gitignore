@@ -23,6 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-
-BoolFlix con Vite.pdf
-Boolflix.drawio.png
+# NON funziona, devo vedere il modo corretto per aggiungere qui dei file da non caricare su github
+./BoolFlix con Vite.pdf
+./Boolflix.drawio.png
